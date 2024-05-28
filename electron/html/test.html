@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>超级笔记</title>
+</head>
+<body>
+	<textarea id="myTextarea"></textarea>
+
+	<button onclick="submit()">确定</button>
+</body>
+<script>
+	function submit(){
+		var textareaValue = document.getElementById('myTextarea').value;
+		window.electronAPI.submit(textareaValue)
+	}
+</script>
+</html>
